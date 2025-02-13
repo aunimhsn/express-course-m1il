@@ -19,6 +19,7 @@ app.use(express.urlencoded())
 
 // Routes
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 // Lancement du serveur
 app.listen(port, () => {
